@@ -1,0 +1,1114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+h2 {
+    padding-left: 24px;
+
+    border-left: 15px solid #e1e6ea;
+
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0px 15px;
+
+    margin: 0px auto;
+}
+
+/* hearder
+------------------
+-------------------------
+ */
+
+header {
+    line-height: 82px;
+
+    background-color: #1d2126;
+    
+}
+
+header #icon{
+    font-size: 35px;
+    color: white; 
+    display: none;
+}
+
+header .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 a{
+    line-height: 82px;
+
+    display: inline-block;
+}
+
+header ul{
+    display: inline-block;
+}
+
+header ul li {
+    list-style-type: none;
+
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #a4aead;
+
+    display: inline-block;
+
+    border: 2px solid #1d2126;
+    border-radius: 3px;
+
+    padding: 0px 12px;
+
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+header ul li:nth-child(1) a{
+    color: #23b7a4;
+    border: 2px solid #23b7a4;
+}
+
+header ul li:not(:first-child) a:hover{
+    border: 2px solid #5b6168;
+
+    text-decoration: none;
+    color: #a4aead;
+}
+
+/* banner
+------------------------- */
+
+#banner {
+    height: 660px;
+
+    padding-top: 220px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./image/banner.png);
+}
+
+#banner .container div{
+    max-width: 654px;
+}
+
+#banner .container li{
+    display: inline-block;
+}
+
+#banner h2 {
+    padding-left: 0;
+
+    border-left: none;
+
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 28px;
+}
+
+#banner p {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #ccd0d7;
+
+    margin-bottom: 36px;
+}
+
+#banner a{
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    padding: 10px 30px;
+
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+
+    margin-left: 17px;
+}
+
+#banner a:hover {
+    border: 1px solid #23b7a4;
+    border-radius: 3px;
+
+    background-color: #23b7a4 ;
+}
+
+#banner .container {
+    position: relative;
+
+    height: 100%;
+}
+
+#banner .container > ul{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+#banner .container > ul li {
+    text-indent: -1000000px;
+
+    height: 15px;
+    width: 15px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    margin-left: 10PX;
+}
+
+#banner .container > ul li:hover{
+    background-color: white;
+}
+
+/* about --------
+-------------------
+*/
+
+#about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    border-bottom: 1px solid #dde1e4;
+}
+
+#about h2 {
+    margin-bottom: 56px;
+}
+
+#about .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .container >div div:first-child  {
+    max-width: 654px;
+}
+
+#about .container >div div:last-child {
+    max-width: 456px;
+
+    margin-left: 30px;
+}
+
+#about h3 {
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    color: #292f36;
+}
+
+#about ol {
+    counter-reset: about;
+}
+
+ #about ol li {
+    position: relative;
+
+    padding-left: 70px;
+ }
+
+ #about ol li::before {
+     counter-increment: about;
+     content: counter(about,decimal-leading-zero);
+
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     width: 52px;
+    height: 52px;
+
+    background-color: #23b7a4;
+    font-size: 20px;
+    line-height: 52px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+ }
+
+ #about .container > div > div p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    margin-bottom: 28px;
+ }
+
+ #about ol li p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92 ;
+    margin-bottom: 33px;
+ }
+
+ #about .container ul li {
+     display: inline-block;
+ }
+
+ #about .container ul li a{
+    display: inline-block;
+    text-indent: -1000000px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    background-position: center center;
+}
+#about .container ul li:nth-child(1) a{
+    background-image: url(./image/social/iconfb.png);}
+
+#about .container ul li:nth-child(2) a{
+    background-image: url(./image/social/twiter.png);
+}
+#about .container ul li:nth-child(3) a{
+    background-image: url(./image/social/gg.png);
+}
+#about .container ul li:nth-child(4) a{
+    background-image: url(./image/social/D.png);
+}
+#about .container ul li:nth-child(5) a{
+    background-image: url(./image/social/e.png);
+}
+
+/* team 
+---------------
+---------------
+----------------- */
+
+#team {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#team h2 {
+    margin-bottom: 60px;
+}
+
+#team .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .container > div > div {
+    max-width: calc( (100% - 90px) /4);
+
+    position: relative;
+}
+
+#team .container  div  div img{
+    max-width: 100%;
+    display: block;
+}
+
+#team .container  div  div .wrap-h4 {
+    background-color: #e1e6ea;
+
+    height: 74px;
+    
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+#team .container  div h4 {   
+    text-transform: uppercase;
+
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#team .mark {
+    position: absolute;
+    display: none;
+
+    width: 100%;
+    max-height: 80%;
+
+    padding-top: 125px;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#team .container > div > div:hover .mark{
+    display: block;
+}
+
+#team .container >div > div:hover .wrap-h4{
+    background-color: #3a454d ;
+    color: white;
+}
+
+#team .mark ul{ 
+    letter-spacing: 0px;
+}
+
+#team .mark ul li{
+    display: inline-block;
+
+    margin-left: -3px;
+}
+
+#team .mark ul li a{
+    display: inline-block;
+
+    text-indent: -1000000px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #3a454d;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+#team .mark ul li:nth-child(1) a{
+    background-image: url(./image/social/twiter.png);
+}
+#team .mark ul li:nth-child(2) a{
+    background-image: url(./image/social/iconfb.png);
+}
+#team .mark ul li:nth-child(3) a{
+    background-image: url(./image/social/linkin.png);
+}
+
+#team .mark ul li a:hover{
+    background-color: #4e5a62;
+}
+
+#team .mark ul li{
+position: relative;
+animation: mymove 1s ;
+}
+
+@keyframes mymove {
+from {bottom: -100px;}
+to {bottom: 0px;}
+}
+
+/* work 
+--------------
+--------------------
+*/
+
+#work {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    background-color: #3a454d;
+}
+
+#work h2 {
+    margin-bottom: 60px;
+
+    color: white;
+}
+
+#work .container > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#work .container > div > div {
+    position: relative;
+
+    max-width: calc( (100% - 60px ) /3);
+
+    margin-bottom: 30px;
+}
+
+#work .container > div > div img{
+    max-width: 100%;
+    display: block;
+}
+
+#work .container > div > div .work-mark{
+    display: none;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding-top: 205px;
+
+    background-repeat: no-repeat;
+    background-image: url(./image/plus.png);
+    background-position: center 102.5px;
+}
+
+#work .container > div > div .work-mark p{
+    animation: immove 1s ;
+    position: relative;
+
+    height: 60px;
+    line-height: 60px;
+
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-color: #292f36;
+
+    padding-left: 20px;
+}
+/*
+@keyframes immove {
+from {bottom: -5px;}
+to {bottom: 0px;}
+}*/
+
+#work .container > div > div:hover .work-mark {
+    display: block;
+}
+
+#work #button {
+    margin-top: 30px;
+}
+
+#work #button a{
+    margin: 0px auto;
+    padding: 0px 20px;
+
+    font-size: 18px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    text-decoration: none;
+    color: white;
+
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+#work #button a:hover{
+    background-color: #23b7a4;
+}
+
+/* services
+-------------
+---------------------
+*/
+
+#services {
+    padding-top: 80px;
+    
+}
+
+#services h2 {
+    margin-bottom: 150px;
+}
+
+#services .container > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#services .container > div > div{
+    max-width: calc( ( 100% - 90px ) /4 );
+
+    text-align: center;
+}
+
+#services .container h3{
+    position: relative;
+
+    color: #292f36;
+
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#services .container div div:nth-child(4n+1) h3::before{
+    content: url(./image/Item/pencil.png);
+
+    position: absolute;
+    top: -80px;
+    left: 110px;
+}
+#services .container div div:nth-child(4n+2) h3::before{
+    content: url(./image/Item/clock.png);
+
+    position: absolute;
+    top: -80px;
+    left: 110px;
+}
+#services .container div div:nth-child(4n+3) h3::before{
+    content: url(./image/Item/item1.png);
+
+    position: absolute;
+    top: -80px;
+    left: 110px;
+}
+#services .container div div:nth-child(4n+4) h3::before{
+    content: url(./image/Item/mobile.png);
+
+    position: absolute;
+    top: -80px;
+    left: 110px;
+}
+
+#services .container p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+
+    margin-bottom: 130px;
+}
+
+/* feature
+-------------------
+---------------------
+*/
+
+#feature {
+    background-color: #3a454d;
+
+    padding-top: 85px;
+    padding-bottom: 115px;
+}
+
+#feature h2{
+    margin-bottom: 60px;
+    color: white;
+}
+
+#feature > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#feature > div > div > div{
+    max-width: calc((100% - 60px)/3);
+}
+
+#feature > div > div > div img{
+    max-width: 100%;
+}
+
+#feature h3{
+    font-size: 18px;
+    line-height: 42px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    margin-top: 42px;
+}
+
+#feature p{
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #dcdfe1;
+
+    margin-top: 8px;
+}
+
+
+/* ----------------------------------------- */
+
+/* contact */
+
+
+#contact {
+    padding-top: 65px;
+    height: 870px;
+
+    background-image: url(./image/map.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 160px;
+}
+#contact h2{
+    margin-bottom: 460px;
+}
+
+#contact .container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact div div div {
+    max-width: 555px;
+}
+
+#contact form{
+    width: 555px;
+
+    background-color: white;
+
+    margin-top: -190px;
+
+    padding: 25px 20px;
+}
+
+#contact h3 {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    color: #292f36;
+
+    margin-bottom: 32px;
+}
+
+#contact p{
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #8d8f92 ;
+
+    margin-bottom: 30px ;
+}
+
+
+
+form label {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    color: #8d8f92;
+
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+form > div:first-child {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 26px;
+}
+
+form div div{
+    width: 240px;
+}
+
+form div div input {
+    width: 240px;
+    height: 44px;
+
+    padding: 10px;
+
+    background-color: #eaeef1;
+
+    border: 1px solid #eaeef1 ;
+    border-radius: 3px;
+}
+
+[type="text"]:focus{
+    outline: 0;
+}
+
+form textarea {
+    background-color: #eaeef1;
+
+    border: 1px solid #eaeef1 ;
+    border-radius: 3px;
+
+    margin-bottom: 32px;
+
+    padding: 10px;
+}
+
+form textarea:focus{
+    outline: 0;
+}
+
+[type="submit"]{
+    display: inline-block;
+    width: 150px;
+    height: 42px;
+
+    background-color: #23b7a4;
+    color: white;
+
+    font-size: 14px;
+    line-height: 42px ;
+    text-transform: uppercase;
+
+    border: 1px solid #23b7a4;
+    border-radius: 3px;
+}
+
+/* ----------------------------- */
+
+/*   footer    */
+
+footer{
+    background-color: #3a454d;
+}
+
+footer .container {
+    height: 96px;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer ul li{
+    display: inline-block;
+    text-indent: -1000000px;
+
+    background-repeat: no-repeat;
+
+    margin-left: 16px;
+}
+
+footer ul li:nth-child(1){
+    background-image: url(./image/social/twiter.png);
+    height: 18px;
+    width: 20px;
+}
+footer ul li:nth-child(2){
+    background-image: url(./image/social/iconfb.png);
+    height: 18px;
+    width: 20px;
+}
+footer ul li:nth-child(3){
+    background-image: url(./image/social/sky.png);
+    height: 18px;
+    width: 20px;
+}
+footer ul li:nth-child(4){
+    background-image: url(./image/social/e.png);
+    height: 18px;
+    width: 28px;
+}
+footer ul li:nth-child(5){
+    background-image: url(./image/social/linkin.png);
+    height: 18px;
+    width: 20px;
+}
+
+/* responsive
+-------------------
+----------------------
+*/
+
+@media screen and (max-width: 960px){
+    #banner .container div {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #banner .container > ul {
+        right: 438px; 
+    }
+    #about .container >div div:first-child {
+        max-width: 50%;
+    }
+
+    #team .mark {
+    height: 76%;
+    }
+    #work .container > div > div .work-mark {
+        padding-top: 154px;
+        background-position: center 80px;
+    }
+
+    #services .container div div:nth-child(4n+1) h3::before {
+
+        left: 86px;
+    }#services .container div div:nth-child(4n+2) h3::before {
+        left: 86px;
+    }#services .container div div:nth-child(4n+3) h3::before {
+        left: 86px;
+    }#services .container div div:nth-child(4n+4) h3::before {
+
+        left: 86px;
+    }
+    form > div:first-child {
+        display: block;
+        margin-bottom: 0px;
+    }
+    form div div {
+        width: 100%;
+    }
+    form div div input {
+        width: 100%;
+    }
+}
+
+/* screen 768px
+----------------------
+--------------------------
+*/
+
+@media screen and (max-width: 768px){
+    #banner .container > ul {
+        right: 343px;
+    }
+
+
+    #about {
+        padding-bottom: 80px;
+    }
+    #about .container > div {
+        display: block;
+    }
+    #about .container >div div:first-child{
+        max-width: 100%;
+
+        margin-bottom: 50px;
+    }
+    #about .container >div div:last-child {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+
+    #team .container > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #team .container > div > div {
+        max-width: calc( (100% - 90px) /2);
+        margin-bottom: 30px;
+    }
+    #team .mark {
+        height: 80%;
+    }
+
+
+    #work .container > div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #work .container > div > div {
+        position: relative;
+        max-width: calc( (100% - 60px ) /2);
+        margin-bottom: 30px;
+    }
+    #work .container > div > div .work-mark {
+        padding-top: 190px;
+    }
+
+
+    #services .container > div {
+        justify-content: space-around;
+    }
+    #services .container > div > div {
+        max-width: calc( ( 100% - 90px ) /2 );
+    }
+    #services .container div div:nth-child(4n+1) h3::before {
+        left: 135px;
+    }
+    #services .container div div:nth-child(4n+2) h3::before {
+        left: 135px;
+    }
+    #services .container div div:nth-child(4n+3) h3::before {
+        left: 135px;
+    }
+    #services .container div div:nth-child(4n+4) h3::before {
+        left: 135px;
+    }
+
+
+    #feature {
+        padding-bottom: 45px;
+    }
+    #feature > div > div {
+        display: block;
+    }
+    #feature > div > div > div {
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+
+
+    
+    #contact {
+        height: auto;
+    }
+    #contact .container > div {
+        display: block;
+    }
+    #contact div div div {
+        max-width: 100%;
+    }
+    #contact form {
+        margin-top: 0 ;
+        width: 100%;
+    }
+    form textarea {
+        width: 100%;
+    }
+}
+
+/* 500px
+--------------------------
+----------------
+*/
+
+@media screen and (max-width: 500px){
+    h2{
+        display: inline-block;
+        margin: 0px 60px;
+    }
+
+
+    header ul li {
+        display: block;
+
+        line-height: 45px;
+    }
+
+    header #icon {
+        display: block;
+    }
+
+    header #wrap-icon{
+        position: relative;
+    }
+
+    header #bar {
+        display: none;
+        
+        position: absolute;
+        top: 23px;
+        left: -54px;
+
+        border-radius: 3px;
+
+        width: 100px;
+
+        text-align: center;
+        z-index: 2;
+
+        background-color: #1d2126;
+    }
+
+    header #wrap-icon:hover #bar {
+        display: block;
+    }
+
+
+
+    #banner {
+        height: 480px;
+        padding-top: 80px;
+    }
+    #banner .container > ul {
+        right: 208px;
+    }
+
+
+    #team .container > div > div {
+        max-width: 100%;
+    }
+
+
+    #work .container > div > div {
+        max-width: 100%;
+    }
+    #work .container > div > div .work-mark {
+        padding-top: 205px;
+    }
+
+
+    #services .container > div > div {
+        max-width: 100%;
+    }
+    #services .container div div:nth-child(4n+1) h3::before {
+        left: 210px;
+    }#services .container div div:nth-child(4n+2) h3::before {
+        left: 210px;
+    }#services .container div div:nth-child(4n+3) h3::before {
+        left: 210px;
+    }#services .container div div:nth-child(4n+4) h3::before {
+        left: 210px;
+    }
+
+
+    footer .container {
+        height: auto;
+        padding: 20px;
+
+        display: block;
+    }
+    footer .container >div {
+        text-align: center;
+    }
+    footer .container >div:first-child {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
